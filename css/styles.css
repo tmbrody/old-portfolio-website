@@ -1,0 +1,361 @@
+:root {
+  --primary-color: #e7e7e6;
+  --a-tag-color: #295f57;
+  --a-visited-color: #05676e;
+  --a-hover-color: #86a68d;
+  --a-active-color: #489c79;
+  --button-bg-color: #357b70;
+  --button-focus-color: #3bc98e;
+  --list-item-color: #556b2f;
+  --project-item-color: #d3d3d3;
+  --sun-animation-first-color: #edc655;
+  --sun-animation-second-color: #fcffad;
+  --sun-animation-third-color: #f76414;
+  --primary-text-color: #fff;
+  --border-color: #0000004d;
+  --header-font-weight: 700;
+  --spacing-1: 20px;
+  --spacing-2: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--header-font-weight);
+  line-height: 2.0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--header-font-weight);
+  line-height: 1.9;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--header-font-weight);
+  line-height: 1.8;
+}
+
+a {
+  font-family: 'Joan', serif;
+  color: var(--a-tag-color);
+}
+
+a:visited {
+  color: var(--a-visited-color);
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: var(--a-hover-color);
+}
+
+a:active {
+  color: var(--a-active-color);
+}
+
+.about-content {
+  text-align: center;
+  align-content: center;
+}
+
+.about-content__items {
+  list-style-type: none;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+
+.about-text {
+  padding: auto 20%;
+}
+
+button,
+.button {
+  border: none;
+  font-family: inherit;
+  background-color: var(--button-bg-color);
+  color: var(--primary-text-color) !important;
+  text-decoration: none;
+  padding: var(--spacing-2);
+  border-radius: 3px;
+  border-bottom: 2px solid var(--border-color);
+  line-height: 1.5;
+  transition: opacity 0.9s, padding-bottom 1s;
+}
+
+button:hover, 
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: var(--button-focus-color);
+}
+
+.button2:hover {
+  padding-bottom: 25px;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.contact-info {
+  margin-left: 5%;
+}
+
+.contact-info h1 {
+  margin: auto;
+}
+
+.contact-links {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 50%;
+  margin-bottom: 1%;
+}
+
+.contact-submit {
+  margin-left: 4%;
+}
+
+.container a
+{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font: var(--spacing-1) Raleway;
+    margin: 0px var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-2);
+    position: relative;
+    cursor: pointer;
+}
+
+.highlightTextIn a:before
+{
+    position: absolute;
+    color: var(--primary-text-color);
+    top: 0px;
+    left: 0px;
+    padding: var(--spacing-2);
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.highlightTextIn a
+{
+    color: var(--border-color);
+}
+
+.highlightTextIn a:before
+{
+    transform: scale(1.2);
+} 
+
+.list-of-certificates-text {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--primary-text-color);
+  height: 50px;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-right: var(--spacing-2);
+  list-style-type: none;
+  color: var(--list-item-color);
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.page-header {
+  display: flex;
+  padding-top: 2%;
+}
+
+.page-header__item {
+  flex: 0 1 100%;
+}
+
+.page_header .page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+  margin: auto;
+}
+
+.page-header__main-navigation {
+  padding-top: 1%;
+  padding-left: 28%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header__name-logo {
+  padding: var(--spacing-2);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-footer__social-media a {
+  margin-left: var(--spacing-2);
+}
+
+.page-footer__text {
+  padding-left: var(--spacing-2);
+}
+
+.profile {
+  display: flex;
+  max-width: 800px;
+  margin: 5% auto 3% 30%;
+}
+
+.profile a {
+  font-size: var(--spacing-1); 
+  color: var(--list-item-color);
+}
+
+.profile__portrait {
+  height: 300px; 
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%; 
+  margin: var(--spacing-1) auto;
+}
+
+.profile__text {
+  width: 57%; 
+  padding: 5%;
+}
+
+.profile__text {
+  flex: 1 1 100px;
+}
+
+.project-list__item {
+  display: inline-block;
+  width: 33%;
+}
+
+section {
+  margin: var(--spacing-1);
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+table {
+  padding-bottom: 3%;
+  margin: auto;
+}
+
+@supports(display: grid) {
+
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--spacing-1) var(--spacing-1);
+    margin: 0;
+  }
+
+  .project-list__item {
+    background-color: var(--project-item-color);
+    width: auto;
+    min-height: auto;
+    padding: var(--spacing-1);
+    margin: 0;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+  .page-header__main-navigation {
+    padding: 0;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 1080px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .page-header__main-navigation {
+    padding: var(--spacing-2);
+  }
+}
+@media all and (max-width: 1080px) {
+  .project-list {
+    grid-gap: var(--spacing-2);
+  }
+  .project-list__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .page-header__name-logo img {
+    width: 100%;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: var(--sun-animation-first-color);
+  }
+  50% {
+    fill: var(--sun-animation-second-color);
+  }
+  100% {
+    fill: var(--sun-animation-third-color);
+  }
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <title>Brody Taylor's Contact Info</title>
+  <script src="js/tota11y.min.js"></script>
+</head>
+<main>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <header class="page-header">
+    <div class="page-header__name-logo">
+      <img src="img/brody_taylor_logo.png" alt="Personal logo of Brody Taylor" class="page-header__item">
+    </div>
+    <nav class="page-header__main-navigation page-header__item">
+      <ul role="menubar" class="container highlightTextIn navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item" alt="Home">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active" alt="About Me">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item" alt="Work">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item" alt="Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact-info">
+    <h1>Contact</h1><br>
+
+    <!-- <div class="contact-links">  -->
+      <a class="contact-links" href="tel:+16153934289">Tel: 615-393-4289</a>
+      <a class="contact-links" href="skype:orlaby.tedby">Skype: orlaby.tedby</a>
+      <a class="contact-links" href="mailto:brodytaylor311@gmail.com">brodytaylor311 (at) gmail (dot) com</a><br>
+    <!-- </div> -->
+    <a href="mailto:brodytaylor311@gmail.com">Contact Me</a><br><br>
+
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-first-name">*First Name: </label>
+      <input type="text" class="contact-first-name" required><br><br>
+
+      <label class="standard-label" for="contact-last-name">*Last Name: </label>
+      <input type="text" class="contact-last-name" required><br><br>
+
+      <label class="standard-label" for="contact-email">*E-mail: </label>
+      <input type="email" class="contact-email" required><br><br>
+
+      <label class="standard-label" for="contact-tel">Telephone(xxx-xxx-xxxx): </label>
+      <input type="tel" class="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>
+
+      <label class="standard-label" for="contact-message">*Message (up to 240 characters): </label><br>
+      <textarea maxlength="240" class="contact-message" cols="30" rows="3" required></textarea><br><br>
+
+      <input class="contact-submit" type="submit" value="Send message">
+    </form>
+  </div>
+
+</main>
+</html>
