@@ -167,11 +167,6 @@ button:focus,
     color: var(--border-color);
 }
 
-.highlightTextIn a:before
-{
-    transform: scale(1.2);
-} 
-
 .list-of-certificates-text {
   text-decoration: none;
   display: inline-block;

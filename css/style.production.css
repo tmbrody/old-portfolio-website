@@ -195,12 +195,6 @@ button:focus {
     color: #0000004d;
 }
 
-.highlightTextIn a:before
-{
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-} 
-
 .list-of-certificates-text {
   text-decoration: none;
   display: inline-block;
