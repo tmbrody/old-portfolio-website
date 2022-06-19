@@ -317,6 +317,11 @@ table {
   margin: auto;
 }
 
+ul {
+  -webkit-padding-start: 0%;
+          padding-inline-start: 0%;
+}
+
 @supports(display: grid) {
 
   .project-list {

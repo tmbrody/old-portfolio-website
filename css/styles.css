@@ -272,6 +272,10 @@ table {
   margin: auto;
 }
 
+ul {
+  padding-inline-start: 0%;
+}
+
 @supports(display: grid) {
 
   .project-list {
