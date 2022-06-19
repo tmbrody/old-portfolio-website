@@ -137,7 +137,7 @@ button:focus,
     text-decoration: none;
     font: var(--spacing-1) Raleway;
     margin: 0px var(--spacing-2);
-    padding: var(--spacing-2) var(--spacing-2);
+    padding: 10.5px 10.5px;
     position: relative;
     cursor: pointer;
 }
