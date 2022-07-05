@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 2 version
 */
 
@@ -152,10 +152,6 @@ button:focus {
   margin-bottom: 1%;
 }
 
-.contact-submit {
-  margin-left: 4%;
-}
-
 .container a
 {
     color: #fff;
@@ -165,6 +161,16 @@ button:focus {
     padding: 10.5px 10.5px;
     position: relative;
     cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 1.2em;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
 }
 
 .highlightTextIn a:before
@@ -193,6 +199,10 @@ button:focus {
 .highlightTextIn a
 {
     color: #0000004d;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
 }
 
 .list-of-certificates-text {
@@ -305,6 +315,11 @@ button:focus {
 
 section {
   margin: 20px;
+}
+
+.standard-label {
+  display: inline-block;
+  min-width: 250px;
 }
 
 .sun {
