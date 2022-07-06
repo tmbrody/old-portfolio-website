@@ -127,10 +127,6 @@ button:focus,
   margin-bottom: 1%;
 }
 
-.contact-submit {
-  margin-left: 4%;
-}
-
 .container a
 {
     color: var(--primary-text-color);
@@ -140,6 +136,16 @@ button:focus,
     padding: 10.5px 10.5px;
     position: relative;
     cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 1.2em;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
 }
 
 .highlightTextIn a:before
@@ -165,6 +171,10 @@ button:focus,
 .highlightTextIn a
 {
     color: var(--border-color);
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
 }
 
 .list-of-certificates-text {
@@ -261,6 +271,11 @@ button:focus,
 
 section {
   margin: var(--spacing-1);
+}
+
+.standard-label {
+  display: inline-block;
+  min-width: 250px;
 }
 
 .sun {
